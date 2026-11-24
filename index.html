@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090a12">
+  <meta name="description" content="Portafolio de Fernando Cofre: diseño de videojuegos, modelado 3D, animación y desarrollo interactivo.">
+  <title>Fernando Cofre | Game Design & 3D Art</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="importmap">
+    {"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}
+  </script>
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="barra">
+    <a class="marca" href="#inicio" aria-label="Fernando Cofre, inicio"><span class="marca-icon">FD</span><span>FERNANDO<span class="marca-muted">.COFRE</span></span></a>
+    <nav aria-label="Navegación principal">
+      <a href="#sobre">Sobre mí</a><a href="#habilidades">Habilidades</a><a href="#proyectos">Proyectos</a><a href="#formacion">Formación</a><a href="#contacto" class="nav-contacto">Contacto <span>↗</span></a>
+    </nav>
+    <button class="idioma" id="language-toggle" type="button" aria-label="Cambiar idioma">ES <span>/ EN</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-grid"></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> PORTAFOLIO CREATIVO <span class="eyebrow-line"></span> SANTIAGO, CHILE</p>
+        <h1 class="nombre" id="nombre"><span>FERNANDO</span><span class="nombre-outline">COFRE<span class="punto">.</span></span></h1>
+        <p class="hero-rol" id="rol">Futuro diseñador de videojuegos · Artista 3D</p>
+        <p class="hero-intro" id="intro">Diseño personajes, modelo mundos y doy vida a ideas a través de experiencias interactivas.</p>
+        <div class="hero-actions"><a class="boton boton-primary" href="#proyectos">Explorar proyectos <span>↗</span></a><a class="boton boton-ghost" href="#sobre">Conóceme <span>↓</span></a><a class="boton boton-cv" href="curriculum/Fernando-Cofre-CV.pdf" target="_blank" rel="noopener">Ver currículum <span>↗</span></a></div>
+        <div class="hero-meta"><span>01 / PERFIL</span><span>3D ART · GAME DESIGN · DEVELOPMENT</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+        <div class="visual-glow"></div>
+        <img class="hero-art" src="img/espada-en-la-piedra.png" alt="Modelo 3D low-poly de una espada incrustada en una piedra, proyecto realizado en Blender">
+        <div class="visual-caption"><span class="caption-mark">✳</span><span>BLENDER STUDY<br><b>01 — SWORD IN STONE</b></span></div>
+        <div class="visual-index">3D<br>01</div>
+      </div>
+      <a class="scroll-cue" href="#sobre"><span></span> DESPLAZAR PARA EXPLORAR</a>
+    </section>
+
+    <section class="seccion sobre" id="sobre">
+      <div class="section-top"><span class="section-number">01</span><span class="section-kicker">UN POCO SOBRE MÍ</span></div>
+      <div class="sobre-cuerpo">
+        <div><h2 class="titulo-seccion">Ideas que toman<br><em>forma y movimiento.</em></h2><div class="sobre-texto" id="sobre-texto"></div></div>
+        <aside class="ficha-wrap"><div class="ficha-label">PERFIL / 2026</div><dl class="ficha" id="ficha"></dl></aside>
+      </div>
+    </section>
+
+    <section class="seccion skills-section" id="habilidades">
+      <div class="section-top"><span class="section-number">02</span><span class="section-kicker">HERRAMIENTAS Y CONOCIMIENTOS</span></div>
+      <h2 class="titulo-seccion">Mi caja de <em>herramientas.</em></h2>
+      <p class="section-lead">Tecnología, arte y pensamiento creativo trabajando en conjunto.</p>
+      <div class="grupos" id="grupos"></div>
+    </section>
+
+    <section class="seccion proyectos-section" id="proyectos">
+      <div class="section-top"><span class="section-number">03</span><span class="section-kicker">TRABAJO SELECCIONADO</span></div>
+      <div class="proyectos-cabecera"><div><h2 class="titulo-seccion">Proyectos <em>destacados.</em></h2><p class="section-lead">Una muestra de procesos, experimentos y creación digital.</p></div><div class="filtros" id="filtros" role="tablist" aria-label="Filtrar proyectos"></div></div>
+      <div class="galeria" id="galeria"></div>
+      <p class="project-note">Este portafolio está en crecimiento. Nuevos proyectos se incorporarán a medida que avance mi proceso creativo.</p>
+    </section>
+
+    <section class="seccion formacion-section" id="formacion">
+      <div class="section-top"><span class="section-number">04</span><span class="section-kicker">APRENDIZAJE Y FORMACIÓN</span></div>
+      <h2 class="titulo-seccion">Mi <em>formación.</em></h2>
+      <div class="timeline">
+        <article class="timeline-item"><span class="timeline-date">EN CURSO · 3.er AÑO</span><div><h3>Ingeniería en Realidad Virtual y Diseño de Videojuegos</h3><p>Universidad Bernardo O’Higgins · Santiago, Chile</p></div><span class="timeline-icon">✳</span></article>
+        <article class="timeline-item"><span class="timeline-date">ENSEÑANZA MEDIA</span><div><h3>Técnico de Nivel Medio en Telecomunicaciones</h3><p>Formación técnico-profesional</p></div><span class="timeline-icon">⌁</span></article>
+      </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+      <div class="contact-inner"><div class="section-top"><span class="section-number">05</span><span class="section-kicker">HAGAMOS ALGO INCREÍBLE</span></div><p class="contact-pre">¿Tienes una idea o proyecto?</p><h2>Hablemos<span>.</span></h2><a class="correo" id="correo" href="mailto:fernandosepulvedacofre@gmail.com">fernandosepulvedacofre@gmail.com</a><div class="contact-bottom"><p>Abierto a conectar, aprender y colaborar en nuevos desafíos creativos.</p><ul class="enlaces" id="enlaces"></ul></div></div>
+    </section>
+  </main>
+  <footer class="pie"><a class="footer-brand" href="#inicio">FD<span>.</span></a><span id="pie-nombre">© 2026 Fernando Cofre</span><span>DISEÑADO CON INTENCIÓN · SANTIAGO, CHILE</span><a href="#inicio" class="back-top">VOLVER ARRIBA ↑</a></footer>
+
+  <dialog class="modal" id="modal" aria-labelledby="modal-titulo"><div class="modal-marco"><div class="modal-medio" id="modal-medio"></div><div class="modal-info"><p class="modal-tipo" id="modal-tipo"></p><h3 id="modal-titulo"></h3><p id="modal-desc"></p><p class="modal-herr" id="modal-herr"></p><div class="modal-nav"><button type="button" id="modal-ant">← Anterior</button><button type="button" id="modal-sig">Siguiente →</button></div></div><button type="button" class="modal-cerrar" id="modal-cerrar" aria-label="Cerrar">×</button></div></dialog>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
