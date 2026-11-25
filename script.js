@@ -169,7 +169,7 @@ const $ = (id) => document.getElementById(id);
 
 function pintarPerfil() {
   document.title = `${PERFIL.nombre} · Portafolio`;
-  $('marca').textContent = PERFIL.nombre;
+  if ($('marca')) $('marca').textContent = PERFIL.nombre;
   $('pie-nombre').textContent = `© ${new Date().getFullYear()} ${PERFIL.nombre}`;
 
   $('nombre').innerHTML = PERFIL.nombre
@@ -475,7 +475,7 @@ function setLanguage(lang) {
   document.querySelector('.contact-bottom p').textContent = t.contactText;
   document.querySelector('.scroll-cue').innerHTML = `<span></span> ${t.scroll}`;
   document.querySelector('.project-note').textContent = t.note;
-  if (PROYECTOS[0]) { PROYECTOS[0].titulo = t.projectName; PROYECTOS[0].descripcion = t.projectDesc; }
+  const espada = PROYECTOS.find((p) => p.src === 'img/espada-en-la-piedra.png' && p.tipo === 'foto'); if (espada) { espada.titulo = t.projectName; espada.descripcion = t.projectDesc; }
   pintarGaleria();
 }
 languageButton?.addEventListener('click',()=>setLanguage(currentLanguage==='es'?'en':'es'));

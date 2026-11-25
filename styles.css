@@ -5,3 +5,7 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
 
 .boton-cv{border:1px solid rgba(103,232,249,.35);color:#9debf5}.boton-cv:hover{border-color:var(--cyan);color:var(--cyan)}
+
+.visor-modal{position:relative;width:100%;height:100%;min-height:450px;background:radial-gradient(circle at 50% 40%,#26231b,#090a12 75%)}.visor-modal canvas{display:block;width:100%;height:100%}.visor-estado{position:absolute;inset:0;display:grid;place-content:center;text-align:center;font-size:13px}@media(max-width:650px){.visor-modal{min-height:280px}}
+.tarjeta[data-tipo=video]:after,.tarjeta[data-tipo=modelo]:after{content:'▶';position:absolute;top:14px;right:14px;width:34px;height:34px;display:grid;place-items:center;border-radius:50%;background:rgba(9,10,18,.7);border:1px solid var(--line);font-size:11px;color:var(--purple)}.tarjeta[data-tipo=modelo]:after{content:'3D';font:600 10px var(--display)}
+.tarjeta{grid-column:span 6;min-height:340px}.tarjeta.ancha{grid-column:span 12;min-height:430px}.tarjeta[hidden]{display:none}@media(max-width:650px){.tarjeta,.tarjeta.ancha{grid-column:1/-1;min-height:300px}}

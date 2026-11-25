@@ -61,5 +61,58 @@ export const PROYECTOS = [
     descripcion: 'Proyecto de modelado y animación 3D realizado en Blender. El trabajo contempla la creación y el texturizado de la espada y la piedra, además de una animación en la que la espada sale de la roca y realiza movimientos en el aire. La imagen muestra el modelo desarrollado; no se incluye video de la animación.',
     herramientas: ['Blender', 'Modelado 3D', 'Texturizado', 'Animación'],
     anio: 2026
+  },
+  {
+    titulo: 'Espada en la piedra (modelo 3D)',
+    tipo: 'modelo',
+    src: 'modelos/Cube.glb',
+    miniatura: 'img/espada-en-la-piedra.png',
+    descripcion: 'Modelo 3D interactivo: arrastra para girarlo y usa la rueda para acercarte.',
+    herramientas: ['Blender', 'Modelado 3D'],
+    anio: 2026
+  },
+  {
+    titulo: 'Diorama Pokémon',
+    tipo: 'modelo',
+    src: 'modelos/pokemon.glb',
+    miniatura: 'img/diorama-pokemon.png',
+    descripcion: 'Terreno con Centro Pokémon, gimnasio y pinos. Modelo 3D interactivo: arrastra para girarlo y usa la rueda para acercarte.',
+    herramientas: ['Blender', 'Modelado 3D'],
+    anio: 2026
+  },
+  {
+    titulo: 'Doom',
+    tipo: 'modelo',
+    src: 'modelos/doom.glb',
+    miniatura: 'img/doom-miniatura.png',
+    descripcion: 'Modelo 3D interactivo: arrastra para girarlo y usa la rueda para acercarte.',
+    herramientas: ['Blender', 'Modelado 3D'],
+    anio: 2026
+  },
+  {
+    titulo: 'Diorama Pokémon — render',
+    tipo: 'render',
+    src: 'img/diorama-pokemon.png',
+    descripcion: 'Render del diorama con Centro Pokémon, gimnasio y bosque.',
+    herramientas: ['Blender', 'Render'],
+    anio: 2026
+  },
+  {
+    titulo: 'Agujero negro',
+    tipo: 'render',
+    src: 'img/agujero-negro.png',
+    descripcion: 'Render de un agujero negro con su disco de acreción.',
+    herramientas: ['Blender', 'Render'],
+    anio: 2026
+  },
+  {
+    titulo: 'Animación EV3',
+    tipo: 'video',
+    src: 'videos/animacion-ev3.mp4',
+    miniatura: 'img/animacion-ev3-miniatura.jpg',
+    descripcion: 'Animación 3D de un personaje cuadrúpedo.',
+    herramientas: ['Animación 3D'],
+    anio: 2026
   }
+  // Segundo video: copia el archivo a videos/ y agrega otro bloque como el de arriba.
 ];
