@@ -117,7 +117,7 @@ export const PROYECTOS = [
   {
     titulo: 'Paisaje apocalíptico',
     tipo: 'video',
-    src: 'videos/paisaje-apocaliptico.mp4',
+    src: 'https://www.youtube.com/watch?v=LXXEn3xmies&t=8s',
     miniatura: 'img/paisaje-apocaliptico.jpg',
     descripcion: 'Animación 3D de un escenario del fin del mundo.',
     herramientas: ['Animación 3D', 'Unity'],
