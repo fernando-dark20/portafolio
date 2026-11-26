@@ -113,6 +113,15 @@ export const PROYECTOS = [
     descripcion: 'Animación 3D de un personaje cuadrúpedo.',
     herramientas: ['Animación 3D'],
     anio: 2026
+  }  
+  {
+    titulo: 'apocalíptico',
+    tipo: 'video',
+    src: 'videos/paisaje de apocalíptico',
+    miniatura: 'img/paisaje apocalíptico.jpg',
+    descripcion: 'Animación 3D de un esenario del fin del mundo .',
+    herramientas: ['Animación 3D, unity'],
+    anio: 2026
   }
   // Segundo video: copia el archivo a videos/ y agrega otro bloque como el de arriba.
 ];
