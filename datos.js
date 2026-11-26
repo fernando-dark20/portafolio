@@ -1,4 +1,4 @@
-// Contenido del portafolio de Fernando Cofre
+
 export const PERFIL = {
   nombre: 'Fernando Cofre',
   rol: 'Futuro diseñador de videojuegos · Artista 3D',
@@ -113,15 +113,15 @@ export const PROYECTOS = [
     descripcion: 'Animación 3D de un personaje cuadrúpedo.',
     herramientas: ['Animación 3D'],
     anio: 2026
-  }  
+  },
   {
-    titulo: 'apocalíptico',
+    titulo: 'Paisaje apocalíptico',
     tipo: 'video',
-    src: 'videos/paisaje de apocalíptico',
-    miniatura: 'img/paisaje apocalíptico.jpg',
-    descripcion: 'Animación 3D de un esenario del fin del mundo .',
-    herramientas: ['Animación 3D, unity'],
+    src: 'videos/paisaje-apocaliptico.mp4',
+    miniatura: 'img/paisaje-apocaliptico.jpg',
+    descripcion: 'Animación 3D de un escenario del fin del mundo.',
+    herramientas: ['Animación 3D', 'Unity'],
     anio: 2026
   }
-  // Segundo video: copia el archivo a videos/ y agrega otro bloque como el de arriba.
+    // Para otro proyecto: agrega una coma después de la llave anterior y copia un bloque como el de arriba.
 ];
